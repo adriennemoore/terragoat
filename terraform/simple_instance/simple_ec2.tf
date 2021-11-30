@@ -39,6 +39,9 @@ resource "aws_instance" "web_server_instance" {
     git_repo             = "terragoat"
     yor_trace            = "71b62be8-98e1-4067-a4de-5adecc3e5bbc"
   }
+  *_block_device {
+    encrypted = true
+  }
 }
 
 data "aws_ami" "ubuntu" {
