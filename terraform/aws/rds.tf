@@ -1,6 +1,20 @@
 resource "aws_rds_cluster" "app1-rds-cluster" {
   cluster_identifier      = "app1-rds-cluster"
   allocated_storage       = 10
+  backup_retention_period = 15
+  tags = {
+    git_commit           = "a7eb698361f8f1363000238e0fc21f3033cd8baa"
+    git_file             = "terraform/aws/rds.tf"
+    git_last_modified_at = "2022-01-10 20:47:38"
+    git_last_modified_by = "73203597+adriennemoore@users.noreply.github.com"
+    git_modifiers        = "73203597+adriennemoore"
+    git_org              = "adriennemoore"
+    git_repo             = "terragoat"
+    yor_trace            = "caed7de3-ae1f-41ea-a219-b17cab5169f0"
+  }
+}
+  cluster_identifier      = "app1-rds-cluster"
+  allocated_storage       = 10
   backup_retention_period = 0
   tags = {
     git_commit           = "a7eb698361f8f1363000238e0fc21f3033cd8baa"
