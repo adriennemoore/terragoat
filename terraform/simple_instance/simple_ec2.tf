@@ -42,6 +42,7 @@ resource "aws_instance" "web_server_instance" {
   *_block_device {
     encrypted = true
   }
+  monitoring = true
 }
 
 data "aws_ami" "ubuntu" {
