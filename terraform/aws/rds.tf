@@ -19,9 +19,9 @@ resource "aws_rds_cluster" "app2-rds-cluster" {
   allocated_storage       = 10
   backup_retention_period = 1
   tags = {
-    git_commit           = "a7eb698361f8f1363000238e0fc21f3033cd8baa"
+    git_commit           = "72e94a4868ef53b208055322b41577faaef28044"
     git_file             = "terraform/aws/rds.tf"
-    git_last_modified_at = "2022-01-10 20:47:38"
+    git_last_modified_at = "2022-02-28 23:56:09"
     git_last_modified_by = "73203597+adriennemoore@users.noreply.github.com"
     git_modifiers        = "73203597+adriennemoore"
     git_org              = "adriennemoore"
