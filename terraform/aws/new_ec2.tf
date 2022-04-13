@@ -48,14 +48,14 @@ resource "aws_security_group" "project-iac-sg" {
     create_before_destroy = true
   }
   tags = {
-    git_commit           = "a99816ed6773899cfe3486e5f4d34e48c9dced87"
-    git_file             = "terraform/aws/newec2.tf"
-    git_last_modified_at = "2022-04-13 22:23:02"
+    git_commit           = "b93221ff67d3efd2a7e1d1750058bfbf9d452752"
+    git_file             = "terraform/aws/new_ec2.tf"
+    git_last_modified_at = "2022-04-13 22:23:45"
     git_last_modified_by = "73203597+adriennemoore@users.noreply.github.com"
     git_modifiers        = "73203597+adriennemoore"
     git_org              = "adriennemoore"
     git_repo             = "terragoat"
-    yor_trace            = "2c053696-6131-4fda-8d0c-9c8a23dcf4ff"
+    yor_trace            = "bb66134b-089f-4f15-9673-f3462c0a8824"
   }
 }
 
@@ -82,14 +82,14 @@ resource "aws_instance" "project-iac" {
     Environment          = "DEV"
     OS                   = "UBUNTU"
     Managed              = "IAC"
-    git_commit           = "a99816ed6773899cfe3486e5f4d34e48c9dced87"
-    git_file             = "terraform/aws/newec2.tf"
-    git_last_modified_at = "2022-04-13 22:23:02"
+    git_commit           = "b93221ff67d3efd2a7e1d1750058bfbf9d452752"
+    git_file             = "terraform/aws/new_ec2.tf"
+    git_last_modified_at = "2022-04-13 22:23:45"
     git_last_modified_by = "73203597+adriennemoore@users.noreply.github.com"
     git_modifiers        = "73203597+adriennemoore"
     git_org              = "adriennemoore"
     git_repo             = "terragoat"
-    yor_trace            = "a0da110f-dbcf-42c2-85e3-36992afc635f"
+    yor_trace            = "c5c11139-221f-4152-8cd7-cb354dbe1d75"
   }
 
   depends_on = [aws_security_group.project-iac-sg]
